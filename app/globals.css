@@ -1,26 +1,84 @@
 @import "tailwindcss";
 
+@theme {
+  --font-serif: var(--font-newsreader), Georgia, serif;
+  --font-sans:  var(--font-hanken), system-ui, sans-serif;
+  --font-mono:  var(--font-plex-mono), ui-monospace, monospace;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-bg:          oklch(0.985 0.004 83);
+  --color-surface:     oklch(0.968 0.005 83);
+  --color-surface-2:   oklch(0.945 0.006 83);
+  --color-ink:         oklch(0.235 0.012 60);
+  --color-ink-2:       oklch(0.445 0.012 60);
+  --color-ink-3:       oklch(0.605 0.010 60);
+  --color-hairline:    oklch(0.900 0.006 75);
+  --color-hairline-2:  oklch(0.840 0.007 75);
+  --color-accent:      oklch(0.580 0.140 52);
+  --color-accent-2:    oklch(0.505 0.140 50);
+  --color-accent-soft: oklch(0.935 0.038 70);
+}
+
+[data-theme="dark"] {
+  --color-bg:          oklch(0.175 0.007 65);
+  --color-surface:     oklch(0.212 0.008 65);
+  --color-surface-2:   oklch(0.250 0.009 65);
+  --color-ink:         oklch(0.952 0.005 83);
+  --color-ink-2:       oklch(0.740 0.008 75);
+  --color-ink-3:       oklch(0.600 0.008 70);
+  --color-hairline:    oklch(0.310 0.010 65);
+  --color-hairline-2:  oklch(0.380 0.011 65);
+  --color-accent:      oklch(0.730 0.130 60);
+  --color-accent-2:    oklch(0.800 0.110 65);
+  --color-accent-soft: oklch(0.300 0.050 55);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-bg:          var(--color-bg);
+  --color-surface:     var(--color-surface);
+  --color-surface-2:   var(--color-surface-2);
+  --color-ink:         var(--color-ink);
+  --color-ink-2:       var(--color-ink-2);
+  --color-ink-3:       var(--color-ink-3);
+  --color-hairline:    var(--color-hairline);
+  --color-hairline-2:  var(--color-hairline-2);
+  --color-accent:      var(--color-accent);
+  --color-accent-2:    var(--color-accent-2);
+  --color-accent-soft: var(--color-accent-soft);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.65;
+  letter-spacing: -0.003em;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: oklch(0.580 0.140 52 / 0.15);
+  color: var(--color-ink);
+}
+
+[data-theme="dark"] ::selection {
+  background: oklch(0.730 0.130 60 / 0.22);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
