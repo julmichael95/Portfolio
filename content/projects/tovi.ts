@@ -14,7 +14,7 @@ const tovi: Project = {
   link: { label: "View app", href: "#" },
 
   hero: {
-    src: "",            // Add: /images/tovi/hero.png  (home screen, ~1600×1000 or mobile crop)
+    src: "/images/tovi/hero.png",   // capture: node scripts/capture.js tovi
     alt: "Tovi home screen showing cUSD balance and send/receive actions",
     placeholder: "Tovi — home and balance",
   },
@@ -41,32 +41,32 @@ const tovi: Project = {
   },
   screens: [
     {
-      src: "",            // Add: /images/tovi/screen-1.png  (home screen, ~390×844 mobile)
+      src: "/images/tovi/screen-1.png",   // capture: node scripts/capture.js tovi
       alt: "Home screen with cUSD balance, send/receive actions, and recent transactions",
       placeholder: "Tovi — home screen",
       caption: "The home screen shows balance front and centre, with Send and Receive as the two primary actions. Everything else — activity, settings — is secondary. The hierarchy is deliberate: this is a payments tool, not a social app.",
-      variant: "desktop",   // PWA — desktop viewport; switch to "mobile" if using phone screenshots
+      variant: "mobile",
     },
     {
-      src: "",            // Add: /images/tovi/screen-2.png  (send picker, ~1600×1000)
-      alt: "Send flow — contact picker with search and handle entry",
-      placeholder: "Tovi — send picker",
-      caption: "The recipient picker searches contacts and registered handles simultaneously. Entering a phone number directly is also supported — it falls back gracefully if the recipient isn't on Tovi yet, with a 'Invite to receive' option.",
-      variant: "desktop",
-    },
-    {
-      src: "",            // Add: /images/tovi/screen-3.png  (amount entry, ~1600×1000)
-      alt: "Send flow — amount entry with keypad and optional note",
-      placeholder: "Tovi — amount entry",
-      caption: "Amount entry uses a custom keypad rather than the native keyboard — it's faster, avoids the keyboard animation jank, and keeps the layout stable. The note field is optional but surfaces the last three notes used, reducing friction for recurring payments.",
-      variant: "desktop",
-    },
-    {
-      src: "",            // Add: /images/tovi/screen-4.png  (activity feed, ~1600×1000)
+      src: "/images/tovi/screen-2.png",
       alt: "Activity feed showing completed and pending transactions",
       placeholder: "Tovi — activity feed",
       caption: "The activity feed shows both sent and received transactions with their on-chain status. The 'View on explorer' deep-link to Celoscan is available on completed transactions — important for trust, even if most users never tap it.",
-      variant: "desktop",
+      variant: "mobile",
+    },
+    {
+      src: "/images/tovi/screen-3.png",
+      alt: "Receive screen with QR code and shareable pay link",
+      placeholder: "Tovi — receive / QR",
+      caption: "The Receive screen generates a QR code and a shareable pay link. The link opens a pre-filled send screen for the recipient — even without the app installed. This is the pattern that makes Tovi work as a web-first product rather than a native one.",
+      variant: "mobile",
+    },
+    {
+      src: "/images/tovi/screen-4.png",
+      alt: "You screen — profile, settings, pay link, and account controls",
+      placeholder: "Tovi — profile",
+      caption: "The You screen surfaces the pay link (tovi.app/@maya) prominently — it's the primary way to get paid without initiating a send. Settings are organised into Account and More, with Security and Notifications as first-class options rather than buried preferences.",
+      variant: "mobile",
     },
   ],
   ai: {
