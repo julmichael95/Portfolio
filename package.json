@@ -9,7 +9,11 @@
     "capture": "node scripts/capture.js",
     "capture:tovi": "node scripts/capture.js tovi",
     "capture:alune": "node scripts/capture.js alune",
-    "capture:anse": "node scripts/capture.js anse"
+    "capture:anse": "node scripts/capture.js anse",
+    "capture:android": "node scripts/capture-android.js",
+    "capture:android:chess": "node scripts/capture-android.js chess",
+    "capture:android:sudoku": "node scripts/capture-android.js sudoku",
+    "capture:android:mockups": "node scripts/capture-android-mockups.js"
   },
   "dependencies": {
     "next": "16.2.7",

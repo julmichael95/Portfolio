@@ -13,7 +13,7 @@ const chess: Project = {
   stack: ["Kotlin", "Jetpack Compose", "Android", "Kotlinx Serialization", "DataStore"],
 
   hero: {
-    src: "",            // Add: /images/chess/hero.png  (game board screenshot, ~1080×2340 Android crop or composed)
+    src: "/images/chess/hero.png",
     alt: "CheckmateFlow Android app — game board with move highlights and notation row",
     placeholder: "CheckmateFlow — game in progress",
   },
@@ -39,28 +39,28 @@ const chess: Project = {
   },
   screens: [
     {
-      src: "",            // Add: /images/chess/screen-1.png  (game board, ~1080×2340 Android)
+      src: "/images/chess/screen-1.png",
       alt: "Game board with selected piece, legal move dots, and last-move highlight",
       placeholder: "CheckmateFlow — game board",
       caption: "Tapping a piece highlights legal destinations with animated dots. The last move is highlighted on both origin and destination squares. The visual hierarchy is deliberate: possible moves are subtle, the last move is clear, and the selected piece is prominent.",
       variant: "mobile",
     },
     {
-      src: "",            // Add: /images/chess/screen-2.png  (move history, ~1080×2340 Android)
+      src: "/images/chess/screen-2.png",
       alt: "Move history chip row with scrollable algebraic notation",
       placeholder: "CheckmateFlow — move notation",
       caption: "The move history row shows scrollable algebraic notation for the full game. Tapping the undo control reverts the last half-move and removes the most recent notation chip — the history and board state always stay in sync.",
       variant: "mobile",
     },
     {
-      src: "",            // Add: /images/chess/screen-3.png  (game over dialog, ~1080×2340 Android)
+      src: "/images/chess/screen-3.png",
       alt: "Game over dialog showing checkmate result and restart option",
       placeholder: "CheckmateFlow — game over",
       caption: "The game-over state surfaces the specific terminal condition — checkmate, stalemate, or draw type — rather than a generic 'Game Over.' Players see exactly how the game ended, which matters for learning.",
       variant: "mobile",
     },
     {
-      src: "",            // Add: /images/chess/screen-4.png  (settings, ~1080×2340 Android)
+      src: "/images/chess/screen-4.png",
       alt: "Settings screen with board theme, coordinate toggle, and play-as-colour selection",
       placeholder: "CheckmateFlow — settings",
       caption: "Settings are minimal and functional: board theme (Modern or Wood), coordinate label visibility, and which colour the local player controls. All settings persist across sessions via DataStore.",

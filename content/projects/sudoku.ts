@@ -13,7 +13,7 @@ const sudoku: Project = {
   stack: ["Kotlin", "Jetpack Compose", "Android", "DataStore"],
 
   hero: {
-    src: "",            // Add: /images/sudoku/hero.png  (game board screenshot, ~1080×2340 Android)
+    src: "/images/sudoku/hero.png",
     alt: "Sudoku Android app — active game board with number input pad",
     placeholder: "Sudoku — game board",
   },
@@ -38,28 +38,28 @@ const sudoku: Project = {
   },
   screens: [
     {
-      src: "",            // Add: /images/sudoku/screen-1.png  (home screen, ~1080×2340 Android)
+      src: "/images/sudoku/screen-1.png",
       alt: "Home screen with difficulty options and daily challenge entry point",
       placeholder: "Sudoku — home screen",
       caption: "The home screen leads with the daily challenge and four difficulty modes. The daily challenge badge shows streak status — the main reason to return tomorrow.",
       variant: "mobile",
     },
     {
-      src: "",            // Add: /images/sudoku/screen-2.png  (active game, ~1080×2340 Android)
+      src: "/images/sudoku/screen-2.png",
       alt: "Active game board with selected cell, notes, and mistake counter",
       placeholder: "Sudoku — active game",
       caption: "The game board tracks the active session: mistake count (max 3), elapsed time, undo availability, and the current note mode state. Number entry uses a persistent pad below the board — no keyboard animation, no layout shift.",
       variant: "mobile",
     },
     {
-      src: "",            // Add: /images/sudoku/screen-3.png  (statistics, ~1080×2340 Android)
+      src: "/images/sudoku/screen-3.png",
       alt: "Statistics screen with per-difficulty breakdown and streak history",
       placeholder: "Sudoku — statistics",
       caption: "The Statistics screen shows games started vs. won, no-mistake win counts, best completion times per difficulty, and both current and longest streaks. The per-difficulty breakdown lets players see where they're improving.",
       variant: "mobile",
     },
     {
-      src: "",            // Add: /images/sudoku/screen-4.png  (achievements, ~1080×2340 Android)
+      src: "/images/sudoku/screen-4.png",
       alt: "Achievements screen with locked and unlocked milestones",
       placeholder: "Sudoku — achievements",
       caption: "Eight achievements, each tied to a specific skill or habit milestone. Locked achievements show the requirement; unlocked ones show the completion date. The list is short enough to feel attainable, specific enough to feel earned.",
