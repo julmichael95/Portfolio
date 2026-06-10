@@ -8,7 +8,8 @@
     "start": "next start",
     "capture": "node scripts/capture.js",
     "capture:tovi": "node scripts/capture.js tovi",
-    "capture:alune": "node scripts/capture.js alune"
+    "capture:alune": "node scripts/capture.js alune",
+    "capture:anse": "node scripts/capture.js anse"
   },
   "dependencies": {
     "next": "16.2.7",

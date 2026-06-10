@@ -14,7 +14,7 @@ const anse: Project = {
   link: { label: "Request access", href: "#" },
 
   hero: {
-    src: "",            // Add: /images/anse/hero.png  (dashboard screenshot, ~1600×1000)
+    src: "/images/anse/hero.png",
     alt: "Anse customer success dashboard showing prioritised account risk list",
     placeholder: "Anse — account risk overview",
   },
@@ -40,14 +40,14 @@ const anse: Project = {
   },
   screens: [
     {
-      src: "",            // Add: /images/anse/screen-1.png  (risk list, ~1600×1000 desktop)
+      src: "/images/anse/screen-1.png",
       alt: "Account risk list sorted by risk tier with last-activity timestamp",
       placeholder: "Anse — risk prioritisation",
       caption: "The main list shows every account sorted by risk tier, with the most urgent at the top. Each row shows the account name, tier badge, primary risk signal, and days since last meaningful interaction — enough context to prioritise without clicking through.",
       variant: "desktop",
     },
     {
-      src: "",            // Add: /images/anse/screen-2.png  (account detail, ~1600×1000 desktop)
+      src: "/images/anse/screen-2.png",
       alt: "Account detail with AI health summary, signal breakdown, and suggested action",
       placeholder: "Anse — account detail",
       caption: "The account detail surfaces the full Claude-generated health summary, a breakdown of the four signals, and a suggested next action. The goal is for a CSM to read this in two minutes and know exactly what to do — no additional research required.",
