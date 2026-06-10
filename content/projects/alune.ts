@@ -14,7 +14,7 @@ const alune: Project = {
   link: { label: "View app", href: "#" },
 
   hero: {
-    src: "",            // Add: /images/alune/hero.png  (desktop screenshot, ~1600×1000)
+    src: "/images/alune/hero.png",
     alt: "Alune — daily style dashboard showing today's outfit and weather context",
     placeholder: "Alune — daily style dashboard",
   },
@@ -39,32 +39,32 @@ const alune: Project = {
   },
   screens: [
     {
-      src: "",            // Add: /images/alune/screen-1.png  (Today dashboard, ~1600×1000)
-      alt: "Today dashboard showing today's planned outfit with weather bar",
+      src: "/images/alune/screen-1.png",
+      alt: "Today dashboard showing today's planned outfit with weather context",
       placeholder: "Alune — today dashboard",
       caption: "The Today screen answers the core question immediately: here's what you're wearing today, adjusted for the weather. The weather bar isn't decoration — it actively affects which items the engine weights toward.",
-      variant: "desktop",
+      variant: "mobile",
     },
     {
-      src: "",            // Add: /images/alune/screen-2.png  (Closet grid, ~1600×1000)
-      alt: "Closet grid view with AI-classified items showing colour and category metadata",
+      src: "/images/alune/screen-2.png",
+      alt: "Closet grid showing 8 AI-classified wardrobe items with category and wear count",
       placeholder: "Alune — closet grid",
       caption: "The closet view surfaces the AI-extracted metadata — colour families, occasions, seasons — so users can verify classifications and correct outliers. Accuracy here directly improves outfit quality.",
-      variant: "desktop",
+      variant: "mobile",
     },
     {
-      src: "",            // Add: /images/alune/screen-3.png  (Outfit picks, ~1600×1000)
-      alt: "AI outfit suggestions ranked by compatibility score",
+      src: "/images/alune/screen-3.png",
+      alt: "Outfits tab showing saved outfit combinations with favourite and wear count tags",
       placeholder: "Alune — outfit picks",
       caption: "Outfit suggestions are ranked but the score isn't shown to the user — just the order. The explanation string (colour harmony, occasion fit) is available in the detail view for the curious.",
-      variant: "desktop",
+      variant: "mobile",
     },
     {
-      src: "",            // Add: /images/alune/screen-4.png  (7-day plan, ~1600×1000)
-      alt: "7-day wardrobe plan calendar",
-      placeholder: "Alune — weekly plan",
+      src: "/images/alune/screen-4.png",
+      alt: "Today view scrolled to show recent outfits — Sand on sand and Navy work set",
+      placeholder: "Alune — recent outfits",
       caption: "The Plan calendar lets you assign outfits to days in advance — useful for travel, busy weeks, or anyone who thinks about clothes on Sunday rather than Monday morning.",
-      variant: "desktop",
+      variant: "mobile",
     },
   ],
   ai: {

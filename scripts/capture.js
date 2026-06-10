@@ -238,9 +238,128 @@ async function captureTovi(browser) {
   console.log('  Commit public/images/tovi/ to make them live on Vercel.\n');
 }
 
+// ─── Alune ────────────────────────────────────────────────────────────────────
+
+const ALUNE_BASE = process.env.ALUNE_URL ?? 'http://localhost:3000';
+
+// Alune renders a centred phone-frame shell on desktop (≥640px).
+// Capturing at 1440×900 includes the frame + warm dot-grid background,
+// which looks premium in the portfolio WorkRow card.
+const ALUNE_DESKTOP_VIEWPORT = { width: 1440, height: 900 };
+
+// Mobile captures show the app full-screen, matching the portfolio's
+// "desktop" variant container (Alune is a web app, not native Android).
+const ALUNE_MOBILE_VIEWPORT = { width: 430, height: 932 };
+
+async function captureAlune(browser) {
+  console.log('\n── Alune ────────────────────────────────────────────────────');
+  console.log(`   Base URL  : ${ALUNE_BASE}`);
+  console.log(`   Routes    : /screenshot/today  /screenshot/closet`);
+  console.log(`   Note      : no auth needed — screenshot routes bypass middleware\n`);
+
+  const outDir = path.join(PUBLIC_DIR, 'alune');
+  ensureDir(outDir);
+
+  // CSS applied to every Alune page — suppresses animations for clean captures
+  const CSS = `
+    *, *::before, *::after {
+      transition-duration: 0ms !important;
+      animation-duration: 0ms !important;
+    }
+  `;
+
+  // ── hero: Today at desktop viewport (shows phone frame) ──────────────────
+  {
+    const ctx = await browser.newContext({
+      viewport: ALUNE_DESKTOP_VIEWPORT,
+      deviceScaleFactor: 2,
+    });
+    const page = await ctx.newPage();
+    await page.goto(`${ALUNE_BASE}/screenshot/today`, { waitUntil: 'networkidle' });
+    await page.addStyleTag({ content: CSS });
+    // Wait for the outfit name text to confirm the page content has rendered
+    await page.waitForSelector('h3, [class*="serif"]', { timeout: 8000 });
+    await wait(800);
+    await page.screenshot({ path: path.join(outDir, 'hero.png'), animations: 'disabled' });
+    console.log(`  ✓  public/images/alune/hero.png`);
+    await ctx.close();
+  }
+
+  // ── screen-1: Today at mobile viewport ───────────────────────────────────
+  {
+    const ctx = await browser.newContext({
+      viewport: ALUNE_MOBILE_VIEWPORT,
+      deviceScaleFactor: 3,
+    });
+    const page = await ctx.newPage();
+    await page.goto(`${ALUNE_BASE}/screenshot/today`, { waitUntil: 'networkidle' });
+    await page.addStyleTag({ content: CSS });
+    await page.waitForSelector('h3, [class*="serif"]', { timeout: 8000 });
+    await wait(600);
+    await page.screenshot({ path: path.join(outDir, 'screen-1.png'), animations: 'disabled' });
+    console.log(`  ✓  public/images/alune/screen-1.png`);
+    await ctx.close();
+  }
+
+  // ── screen-2: Closet items grid ───────────────────────────────────────────
+  {
+    const ctx = await browser.newContext({
+      viewport: ALUNE_MOBILE_VIEWPORT,
+      deviceScaleFactor: 3,
+    });
+    const page = await ctx.newPage();
+    await page.goto(`${ALUNE_BASE}/screenshot/closet`, { waitUntil: 'networkidle' });
+    await page.addStyleTag({ content: CSS });
+    // Wait for item cards to render
+    await page.waitForSelector('[class*="garment"], [class*="item"], h2, [class*="serif"]', { timeout: 8000 });
+    await wait(600);
+    await page.screenshot({ path: path.join(outDir, 'screen-2.png'), animations: 'disabled' });
+    console.log(`  ✓  public/images/alune/screen-2.png`);
+    await ctx.close();
+  }
+
+  // ── screen-3: Closet outfits tab ──────────────────────────────────────────
+  {
+    const ctx = await browser.newContext({
+      viewport: ALUNE_MOBILE_VIEWPORT,
+      deviceScaleFactor: 3,
+    });
+    const page = await ctx.newPage();
+    await page.goto(`${ALUNE_BASE}/screenshot/closet?tab=outfits`, { waitUntil: 'networkidle' });
+    await page.addStyleTag({ content: CSS });
+    await page.waitForSelector('button, [class*="outfit"], [class*="serif"]', { timeout: 8000 });
+    await wait(600);
+    await page.screenshot({ path: path.join(outDir, 'screen-3.png'), animations: 'disabled' });
+    console.log(`  ✓  public/images/alune/screen-3.png`);
+    await ctx.close();
+  }
+
+  // ── screen-4: Today at a different scroll position or second pass ─────────
+  // Shows the recent outfits section — scroll down to reveal the outfit cards.
+  {
+    const ctx = await browser.newContext({
+      viewport: ALUNE_MOBILE_VIEWPORT,
+      deviceScaleFactor: 3,
+    });
+    const page = await ctx.newPage();
+    await page.goto(`${ALUNE_BASE}/screenshot/today`, { waitUntil: 'networkidle' });
+    await page.addStyleTag({ content: CSS });
+    await page.waitForSelector('h3, [class*="serif"]', { timeout: 8000 });
+    // Scroll down to show the "Recent outfits" section
+    await page.evaluate(() => window.scrollBy(0, 340));
+    await wait(500);
+    await page.screenshot({ path: path.join(outDir, 'screen-4.png'), animations: 'disabled' });
+    console.log(`  ✓  public/images/alune/screen-4.png`);
+    await ctx.close();
+  }
+
+  console.log(`\n  5 screenshots saved → public/images/alune/`);
+  console.log('  Update alune.ts src fields to activate the images.\n');
+}
+
 // ─── Dispatch ─────────────────────────────────────────────────────────────────
 
-const PROJECTS = { tovi: captureTovi };
+const PROJECTS = { tovi: captureTovi, alune: captureAlune };
 
 async function main() {
   const target = process.argv[2] ?? 'all';

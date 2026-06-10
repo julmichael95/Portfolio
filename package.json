@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "capture": "node scripts/capture.js",
-    "capture:tovi": "node scripts/capture.js tovi"
+    "capture:tovi": "node scripts/capture.js tovi",
+    "capture:alune": "node scripts/capture.js alune"
   },
   "dependencies": {
     "next": "16.2.7",
