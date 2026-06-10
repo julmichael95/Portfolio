@@ -64,6 +64,7 @@ export function ProjectMedia({
       alt={image.alt}
       fill
       className={`object-cover ${className}`}
+      style={{ objectPosition: image.objectPosition ?? "center" }}
       sizes={sizes}
       priority={priority}
       onError={() => setErrored(true)}

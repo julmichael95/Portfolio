@@ -15,8 +15,9 @@ const tovi: Project = {
 
   hero: {
     src: "/images/tovi/hero.png",   // capture: node scripts/capture.js tovi
-    alt: "Tovi activity feed showing completed transactions with on-chain status",
-    placeholder: "Tovi — activity feed",
+    alt: "Tovi home screen showing cUSD balance and send/receive actions",
+    placeholder: "Tovi — home and balance",
+    objectPosition: "top",
   },
 
   problem: [

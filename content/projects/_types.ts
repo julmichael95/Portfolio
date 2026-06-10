@@ -21,6 +21,8 @@ export interface ProjectImage {
   caption?: string;
   placeholder?: string; // Short label shown in the dot-grid placeholder
   variant?: "desktop" | "mobile" | "diagram";
+  /** CSS object-position value — defaults to "center". Use "top" to anchor crop to top of image. */
+  objectPosition?: string;
 }
 
 export interface AIStage {
