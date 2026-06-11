@@ -76,11 +76,10 @@ function FeaturedRow({
         </p>
 
         {/* Meta bar */}
-        <div className="flex items-center gap-4 mb-8 pb-6 border-b border-hairline">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-8 pb-6 border-b border-hairline">
           <MonoLabel>{project.timeframe}</MonoLabel>
-          <span className="text-hairline-2 select-none">·</span>
           <MonoLabel>{project.role}</MonoLabel>
-          <span className="ml-auto inline-flex items-center gap-1.5">
+          <span className="sm:ml-auto inline-flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
             <MonoLabel accent>{project.status}</MonoLabel>
           </span>

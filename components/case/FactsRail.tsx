@@ -15,8 +15,8 @@ export function FactsRail({ project }: FactsRailProps) {
       className="md:sticky md:top-24 self-start"
       aria-label="Project details"
     >
-      {/* On mobile: 2-col grid. On desktop: single column list. */}
-      <div className="grid grid-cols-2 md:grid-cols-1 gap-x-6 gap-y-7 md:gap-y-8 p-6 md:p-0 bg-surface md:bg-transparent rounded-2xl border border-hairline md:border-0 md:rounded-none">
+      {/* Single column on all screen sizes. */}
+      <div className="grid grid-cols-1 gap-y-7 md:gap-y-8 p-6 md:p-0 bg-surface md:bg-transparent rounded-2xl border border-hairline md:border-0 md:rounded-none">
 
         <Fact label="Role">
           <span className="text-[0.9rem] text-ink leading-snug">{project.role}</span>

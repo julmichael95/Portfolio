@@ -71,7 +71,7 @@ export function CaseHero({ project }: CaseHeroProps) {
               <span className="text-[0.9rem] text-ink">{project.role}</span>
             </div>
             {project.link && (
-              <div className="ml-auto">
+              <div className="sm:ml-auto">
                 <Button href={project.link.href} variant="ghost" arrow>
                   {project.link.label}
                 </Button>
