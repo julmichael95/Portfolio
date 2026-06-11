@@ -50,9 +50,9 @@ export default function AboutPage() {
             Software developer.<br className="hidden sm:block" /> Product builder.
           </h1>
           <p className="text-[1.1rem] text-ink-2 max-w-[52ch] leading-relaxed">
-            I build complete products across fintech, consumer AI, B2B SaaS, and
-            Android — solo, from problem definition to shipped app, using a
-            structured AI-native workflow.
+            I started with the ideas, not the code. Now I build both — products
+            across fintech, consumer AI, B2B SaaS, and Android, shipped solo
+            from first principles to working app.
           </p>
         </Container>
       </div>
@@ -87,24 +87,25 @@ export default function AboutPage() {
 
             <div className="space-y-5 max-w-[52ch]">
               <p className="text-[1rem] text-ink-2 leading-relaxed">
-                I started as a software developer and became progressively more
-                interested in the full product problem — not just writing code,
-                but deciding what to build, why it matters, and how to ship it
-                well. My background spans fintech, consumer apps, B2B SaaS, and
-                native Android development.
+                I started as a business person, not a developer. I had a list
+                of product ideas going back to high school — things I genuinely
+                wanted to exist in the world — but no way to build them. Finding
+                reliable developers was hard. Getting them to care about the
+                product the way I did was harder.
               </p>
               <p className="text-[1rem] text-ink-2 leading-relaxed">
-                I work solo and end-to-end. Each project is a complete product,
-                not a prototype — it includes schema design, API architecture,
-                UX structure, and a shipped build. No handoffs. Everything from
-                the data model to the onboarding flow is mine to reason through
-                and own.
+                That changed when I started building with Claude. For the first
+                time, the bottleneck wasn't someone else's availability or
+                priorities — it was my own thinking. I learned to code not as
+                an end in itself, but because it was the only way to actually
+                ship the ideas I'd been sitting on.
               </p>
               <p className="text-[1rem] text-ink-2 leading-relaxed">
-                I use Claude and Gemini as part of a structured workflow — not
-                to replace product judgment, but to compress the time between
-                a decision and a working implementation. The thinking that makes
-                the execution worth doing is not delegated.
+                Now I build end-to-end: product definition, UX structure,
+                architecture, and implementation. Claude and Gemini are part of
+                the workflow — not as a shortcut, but as a way to close the gap
+                between a clear product decision and working code. The judgment
+                is mine. The speed is the point.
               </p>
             </div>
           </div>
