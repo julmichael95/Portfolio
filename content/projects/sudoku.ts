@@ -11,6 +11,7 @@ const sudoku: Project = {
   timeframe: "2025 · 1 week",
   role: "Solo",
   stack: ["Kotlin", "Jetpack Compose", "Android", "DataStore"],
+  link: { label: "View on GitHub", href: "https://github.com/julmichael95/sudoku" },
 
   hero: {
     src: "/images/sudoku/hero.png",

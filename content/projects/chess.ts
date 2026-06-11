@@ -11,6 +11,7 @@ const chess: Project = {
   timeframe: "2025 · 2 weeks",
   role: "Solo",
   stack: ["Kotlin", "Jetpack Compose", "Android", "Kotlinx Serialization", "DataStore"],
+  link: { label: "View on GitHub", href: "https://github.com/julmichael95/CheckmateFlow" },
 
   hero: {
     src: "/images/chess/hero.png",
