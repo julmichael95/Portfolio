@@ -11,7 +11,7 @@ const anse: Project = {
   timeframe: "2025 · 4 weeks",
   role: "Solo — product, design, build",
   stack: ["Next.js 16", "Supabase", "Claude", "TypeScript", "Tailwind CSS v4"],
-  link: { label: "Request access", href: "#" },
+  link: { label: "View app", href: "https://cs-copilot-snowy.vercel.app/" },
 
   hero: {
     src: "/images/anse/hero.png",

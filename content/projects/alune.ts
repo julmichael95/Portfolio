@@ -11,7 +11,7 @@ const alune: Project = {
   timeframe: "2025 · 6 weeks",
   role: "Solo — product, design, build",
   stack: ["Next.js 16", "Supabase", "Tailwind CSS v4", "Gemini 2.5 Flash", "Claude", "Zod"],
-  link: { label: "View app", href: "#" },
+  link: { label: "View app", href: "https://alune.vercel.app/" },
 
   hero: {
     src: "/images/alune/hero.png",

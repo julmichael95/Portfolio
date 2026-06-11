@@ -11,7 +11,7 @@ const tovi: Project = {
   timeframe: "2025 · 8 weeks",
   role: "Solo — product, design, build",
   stack: ["React", "Vite", "TypeScript", "Fastify", "PostgreSQL", "Prisma", "Celo"],
-  link: { label: "View app", href: "#" },
+  link: { label: "View app", href: "https://tovi-eosin.vercel.app/" },
 
   hero: {
     src: "/images/tovi/hero.png",   // capture: node scripts/capture.js tovi
