@@ -43,8 +43,8 @@ export const processSteps: ProcessStep[] = [
     num: "04",
     title: "Use AI for acceleration, not abdication",
     teaser:
-      "Claude Code and Gemini handle scaffolding and implementation speed. Architecture, data model, and product decisions are mine. AI output is read, understood, and tested before it ships.",
-    body: "Claude Code handles scaffolding, boilerplate, and implementation velocity. Gemini handles research, validation, and stress-testing assumptions. Architecture decisions, data models, security-sensitive logic, and anything that requires product judgment are mine — made before AI is involved, not delegated to it. Every AI-generated code block is read and understood before it ships. Speed is the goal; comprehension is the constraint.",
+      "Claude Code handles scaffolding and implementation speed. Perplexity handles research and assumption-testing before the build begins. Architecture, data model, and product decisions are mine — AI output is read, understood, and tested before it ships.",
+    body: "Claude Code handles scaffolding, boilerplate, and implementation velocity. Perplexity handles research, competitive landscape, and stress-testing assumptions before a line of code is written. Architecture decisions, data models, security-sensitive logic, and anything that requires product judgment are mine — made before AI is involved, not delegated to it. Every AI-generated code block is read and understood before it ships. Speed is the goal; comprehension is the constraint.",
     output: "Reviewed, tested, understood code",
   },
   {
@@ -66,7 +66,7 @@ export const processSteps: ProcessStep[] = [
 ];
 
 export interface Tool {
-  name: "Claude Design" | "Claude Code" | "Gemini";
+  name: "Claude Design" | "Claude Code" | "Perplexity";
   role: string;
   usedFor: string[];
   notFor: string;
@@ -96,15 +96,15 @@ export const tools: Tool[] = [
     notFor: "Architecture design, data model decisions, or security-sensitive logic without careful independent review.",
   },
   {
-    name: "Gemini",
-    role: "Research and validation",
+    name: "Perplexity",
+    role: "Research and brainstorming",
     usedFor: [
       "Market and competitive landscape research",
-      "Stress-testing problem statements",
-      "First-principles questioning before build",
-      "Validating assumptions against real-world data",
+      "Stress-testing problem statements before build",
+      "First-principles questioning and assumption validation",
+      "Exploring adjacent ideas and edge cases early",
     ],
-    notFor: "Product decisions or scope definition — Gemini surfaces information; judgment about what to do with it is mine.",
+    notFor: "Product decisions or scope definition — Perplexity surfaces information; judgment about what to do with it is mine.",
   },
 ];
 

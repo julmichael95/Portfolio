@@ -69,8 +69,12 @@ const sudoku: Project = {
   ai: {
     stages: [
       {
+        tool: "Gemini",
+        did: "primary implementation tool — built the backtracking puzzle generator and solver, the Compose screen architecture, and the DataStore persistence layer for game state and statistics",
+      },
+      {
         tool: "Claude Code",
-        did: "scaffolded the backtracking puzzle generator and solver, the Compose screen architecture, and the DataStore persistence layer for game state and statistics",
+        did: "supported implementation alongside Gemini — additional scaffolding, component structure, and code review passes during the build",
       },
       {
         tool: "Me",

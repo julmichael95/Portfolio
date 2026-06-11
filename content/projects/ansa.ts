@@ -57,7 +57,7 @@ const ansa: Project = {
   ai: {
     stages: [
       {
-        tool: "Gemini",
+        tool: "Perplexity",
         did: "researched the CS tooling landscape, churn signal taxonomy in B2B SaaS, and buyer behaviour patterns in mid-market retention",
       },
       {

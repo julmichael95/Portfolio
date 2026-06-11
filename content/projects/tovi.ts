@@ -73,7 +73,7 @@ const tovi: Project = {
   ai: {
     stages: [
       {
-        tool: "Gemini",
+        tool: "Perplexity",
         did: "researched the Celo ecosystem, stablecoin UX patterns across fintech apps, and the compliance landscape for testnet vs mainnet money movement",
       },
       {

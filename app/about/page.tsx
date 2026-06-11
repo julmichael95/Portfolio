@@ -102,10 +102,9 @@ export default function AboutPage() {
               </p>
               <p className="text-[1rem] text-ink-2 leading-relaxed">
                 Now I build end-to-end: product definition, UX structure,
-                architecture, and implementation. Claude and Gemini are part of
-                the workflow — not as a shortcut, but as a way to close the gap
-                between a clear product decision and working code. The judgment
-                is mine. The speed is the point.
+                architecture, and implementation. Perplexity handles the
+                research and brainstorming upfront. Claude and Gemini handle
+                the build. The judgment is mine. The speed is the point.
               </p>
             </div>
           </div>
@@ -262,8 +261,8 @@ export default function AboutPage() {
                     role: "Scaffolding, API routes, test generation, refactoring",
                   },
                   {
-                    name: "Gemini",
-                    role: "Research, validation, stress-testing assumptions",
+                    name: "Perplexity",
+                    role: "Research, brainstorming, stress-testing assumptions",
                   },
                 ].map((tool) => (
                   <div key={tool.name} className="pb-5 border-b border-hairline last:border-b-0 last:pb-0">

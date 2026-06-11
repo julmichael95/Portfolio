@@ -30,8 +30,8 @@ export function Hero({ featuredProjects }: HeroProps) {
           </Display>
 
           <p className="text-[1.1rem] text-ink-2 max-w-[56ch] mb-10 leading-relaxed">
-            A one-person product studio — using Claude and Gemini to go from idea
-            to shipped app in a fraction of the time.
+            A one-person product studio — using Claude, Perplexity, and Gemini
+            to go from idea to shipped app in a fraction of the time.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">

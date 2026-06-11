@@ -70,6 +70,10 @@ const chess: Project = {
   ai: {
     stages: [
       {
+        tool: "Gemini",
+        did: "assisted with parts of the Kotlin/Compose implementation — UI components, state handling, and Android-specific boilerplate during the build",
+      },
+      {
         tool: "Claude Code",
         did: "built the board rendering layer, the ViewModel architecture, the move-history chip row, the pawn promotion picker dialog, and the DataStore settings persistence",
       },
@@ -78,7 +82,7 @@ const chess: Project = {
         did: "designed the rules engine architecture, implemented all move validation and draw condition logic, chose the immutable data model, and validated correctness across pin detection, castling edge cases, en passant, and all five terminal states",
       },
     ],
-    owned: "The rules engine and game-state architecture were designed and validated by me. Correctness in chess is non-negotiable — every edge case (discovered check, castling through check, en passant pin interactions, threefold repetition with transpositions) required manual reasoning and test coverage. Code generation accelerated the UI layer; the engine is mine.",
+    owned: "The rules engine and game-state architecture were designed and validated by me. Correctness in chess is non-negotiable — every edge case (discovered check, castling through check, en passant pin interactions, threefold repetition with transpositions) required manual reasoning and test coverage. Gemini and Claude accelerated the UI layer; the engine is mine.",
   },
   lessons: [
     "Known domains demand execution quality, not product invention. There's no ambiguity about what chess is supposed to do — which makes every rough edge immediately visible to anyone who plays. That pressure produced a more carefully built product than most novel domains would have, because there was nowhere to hide.",

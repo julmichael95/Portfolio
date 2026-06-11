@@ -9,7 +9,7 @@ import { processSteps, tools, principles } from "@/content/process";
 export const metadata: Metadata = {
   title: "Process — Julius Michael",
   description:
-    "A six-step build process applied to every project — from problem statement to shipped product, using Claude and Gemini as disciplined accelerators.",
+    "A six-step build process applied to every project — from problem statement to shipped product, using Claude, Perplexity, and Gemini as disciplined accelerators.",
 };
 
 // ── Section wrapper ────────────────────────────────────────────────────────────
@@ -38,7 +38,7 @@ function PageSection({
 const TOOL_CHIP: Record<string, string> = {
   "Claude Design": "bg-accent-soft text-accent-2 border-accent/20",
   "Claude Code":   "bg-accent-soft text-accent-2 border-accent/20",
-  "Gemini":        "bg-accent-soft text-accent-2 border-accent/20",
+  "Perplexity":    "bg-accent-soft text-accent-2 border-accent/20",
 };
 
 // ── Page ───────────────────────────────────────────────────────────────────────
@@ -317,9 +317,9 @@ export default function ProcessPage() {
               Every product decision in this process is mine. The problem statement,
               the scope list, the information architecture, the data model, the
               scoring logic — these are not AI outputs reviewed for quality. They are
-              judgments made before AI is involved. Claude and Gemini are tools for
-              execution speed; the thinking that makes the execution worth doing is
-              not delegated.
+              judgments made before AI is involved. Perplexity, Claude, and Gemini
+              are tools for speed; the thinking that makes the execution worth doing
+              is not delegated.
             </p>
           </div>
         </div>
