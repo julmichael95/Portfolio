@@ -1,7 +1,7 @@
 import type { Project } from "./_types";
 import alune from "./alune";
 import tovi from "./tovi";
-import anse from "./anse";
+import anse from "./ansa";
 import sudoku from "./sudoku";
 import chess from "./chess";
 

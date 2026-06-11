@@ -8,7 +8,7 @@ import { Section } from "@/components/layout/Section";
 
 import alune from "@/content/projects/alune";
 import tovi from "@/content/projects/tovi";
-import anse from "@/content/projects/anse";
+import anse from "@/content/projects/ansa";
 import sudoku from "@/content/projects/sudoku";
 import chess from "@/content/projects/chess";
 

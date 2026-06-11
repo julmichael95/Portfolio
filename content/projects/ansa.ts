@@ -1,34 +1,34 @@
 import type { Project } from "./_types";
 
-const anse: Project = {
-  slug: "anse",
-  name: "Anse",
+const ansa: Project = {
+  slug: "ansa",
+  name: "Ansa",
   tier: "featured",
   status: "MVP",
   categories: ["B2B SaaS", "AI"],
   oneLiner: "AI customer success that flags churn before it happens.",
-  hook: "By the time a customer churns, they've already decided. Anse surfaces the signal weeks earlier — when there's still time to act.",
+  hook: "By the time a customer churns, they've already decided. Ansa surfaces the signal weeks earlier — when there's still time to act.",
   timeframe: "2025 · 4 weeks",
   role: "Solo — product, design, build",
   stack: ["Next.js 16", "Supabase", "Claude", "TypeScript", "Tailwind CSS v4"],
   link: { label: "View app", href: "https://cs-copilot-snowy.vercel.app/" },
 
   hero: {
-    src: "/images/anse/hero.png",
-    alt: "Anse customer success dashboard showing prioritised account risk list",
-    placeholder: "Anse — account risk overview",
+    src: "/images/ansa/hero.png",
+    alt: "Ansa customer success dashboard showing prioritised account risk list",
+    placeholder: "Ansa — account risk overview",
   },
 
   problem: [
     "Most B2B SaaS companies manage churn reactively. A customer goes quiet, usage drops, the renewal conversation gets awkward — and by then, the decision has already been made. Customer success teams are left doing damage control instead of proactive relationship management. They're not failing for lack of effort; they're failing because they don't have a reliable signal until it's too late.",
     "The tooling exists to fix this — Gainsight, Totango, ChurnZero — but it's priced and built for large CS organisations. Implementation takes months. Licensing runs tens of thousands annually. For early-stage and mid-market SaaS teams, the choice is enterprise software they can't afford or spreadsheets and gut feel. The gap between 'we should be proactive about retention' and 'we have a system that actually helps us be proactive' is where most companies operate.",
-    "The specific failure mode Anse is designed to address: by the time a CSM checks in, the account health summary in their head is already two weeks out of date. The signals were there — in the product data, in the support queue, in the last three email threads — but no one was reading them systematically.",
+    "The specific failure mode Ansa is designed to address: by the time a CSM checks in, the account health summary in their head is already two weeks out of date. The signals were there — in the product data, in the support queue, in the last three email threads — but no one was reading them systematically.",
   ],
   solution: {
     body: [
-      "Anse is a lightweight AI customer success tool designed for SaaS companies that can't justify an enterprise CS platform. It ingests product usage data and produces a risk score per account alongside a plain-English explanation of what's driving it — written for someone who has twenty accounts to manage and four minutes before their next call.",
+      "Ansa is a lightweight AI customer success tool designed for SaaS companies that can't justify an enterprise CS platform. It ingests product usage data and produces a risk score per account alongside a plain-English explanation of what's driving it — written for someone who has twenty accounts to manage and four minutes before their next call.",
       "The signal layer reads four dimensions: login frequency and trend, feature adoption depth (which core features has the account actually used in the last 30 days), support ticket volume and recency, and time since last meaningful interaction. Claude analyses the combined pattern for each account and generates a natural-language health summary, plus a risk tier — Low, Medium, At Risk, or Critical.",
-      "The output is a prioritised list of accounts that need attention today, ordered by risk tier and urgency. A CSM opening Anse sees who to call first and why — not a dashboard full of numbers that requires its own interpretation. The account detail view shows the full health summary, the signals driving it, and a suggested action (re-engagement email, product walkthrough, QBR request, escalation).",
+      "The output is a prioritised list of accounts that need attention today, ordered by risk tier and urgency. A CSM opening Ansa sees who to call first and why — not a dashboard full of numbers that requires its own interpretation. The account detail view shows the full health summary, the signals driving it, and a suggested action (re-engagement email, product walkthrough, QBR request, escalation).",
     ],
     decisions: [
       "AI-generated summaries over manual scoring rubrics. The value isn't the risk number — it's the sentence that explains why an account is at risk, which a CS rep can act on immediately without digging through product analytics. A score tells you something is wrong; a sentence tells you what to do about it.",
@@ -40,16 +40,16 @@ const anse: Project = {
   },
   screens: [
     {
-      src: "/images/anse/screen-1.png",
+      src: "/images/ansa/screen-1.png",
       alt: "Account risk list sorted by risk tier with last-activity timestamp",
-      placeholder: "Anse — risk prioritisation",
+      placeholder: "Ansa — risk prioritisation",
       caption: "The main list shows every account sorted by risk tier, with the most urgent at the top. Each row shows the account name, tier badge, primary risk signal, and days since last meaningful interaction — enough context to prioritise without clicking through.",
       variant: "desktop",
     },
     {
-      src: "/images/anse/screen-2.png",
+      src: "/images/ansa/screen-2.png",
       alt: "Account detail with AI health summary, signal breakdown, and suggested action",
-      placeholder: "Anse — account detail",
+      placeholder: "Ansa — account detail",
       caption: "The account detail surfaces the full Claude-generated health summary, a breakdown of the four signals, and a suggested next action. The goal is for a CSM to read this in two minutes and know exactly what to do — no additional research required.",
       variant: "desktop",
     },
@@ -81,7 +81,7 @@ const anse: Project = {
     "Plain-English AI output changes the UX entirely. Testing early prototypes with both a score-based view and a summary view was instructive: CSMs spent twice as long on the score view trying to interpret it. The summary view led to faster, more confident decisions. When the output is prose rather than numbers, the product becomes a tool for action rather than a tool for analysis.",
     "Risk tiers communicate faster than scores. Iterating the output format from a continuous score to four named tiers changed how testers described the product — from 'a health monitoring tool' to 'something that tells me what to do.' The framing shift was entirely in the output format, not the underlying model.",
   ],
-  next: "Anse as an MVP proves the signal model works. The product becomes a business when data ingestion is automatic — via a lightweight SDK the customer installs, or through direct CRM integration that syncs product usage without manual exports. That integration layer is the next build phase, alongside Slack alerts when an account crosses into At Risk territory. The goal is zero-friction insertion into a CS team's existing workflow.",
+  next: "Ansa as an MVP proves the signal model works. The product becomes a business when data ingestion is automatic — via a lightweight SDK the customer installs, or through direct CRM integration that syncs product usage without manual exports. That integration layer is the next build phase, alongside Slack alerts when an account crosses into At Risk territory. The goal is zero-friction insertion into a CS team's existing workflow.",
   order: 3,
 
   workCard: {
@@ -92,4 +92,4 @@ const anse: Project = {
   },
 };
 
-export default anse;
+export default ansa;

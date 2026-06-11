@@ -150,8 +150,8 @@ export default function AboutPage() {
               domain: "B2B SaaS",
               descriptor:
                 "Operational workflows and the information structure that makes them usable. The goal is a product that reduces cognitive load for people with too much to track.",
-              project: "Anse",
-              slug: "anse",
+              project: "Ansa",
+              slug: "ansa",
             },
             {
               domain: "Android / Mobile",

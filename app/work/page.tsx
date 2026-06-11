@@ -10,7 +10,7 @@ import type { Project } from "@/content/projects/_types";
 
 import alune from "@/content/projects/alune";
 import tovi from "@/content/projects/tovi";
-import anse from "@/content/projects/anse";
+import anse from "@/content/projects/ansa";
 import chess from "@/content/projects/chess";
 import sudoku from "@/content/projects/sudoku";
 
