@@ -83,6 +83,12 @@ const anse: Project = {
   ],
   next: "Anse as an MVP proves the signal model works. The product becomes a business when data ingestion is automatic — via a lightweight SDK the customer installs, or through direct CRM integration that syncs product usage without manual exports. That integration layer is the next build phase, alongside Slack alerts when an account crosses into At Risk territory. The goal is zero-friction insertion into a CS team's existing workflow.",
   order: 3,
+
+  workCard: {
+    category: "B2B SaaS / Customer Success",
+    description:
+      "An AI customer success platform built to help teams monitor account health, surface risk, and take action more efficiently. The project explores how AI can support structured operational workflows instead of acting as a loose chat layer on top of existing tools.",
+  },
 };
 
 export default anse;

@@ -86,6 +86,12 @@ const sudoku: Project = {
     "Three-mistake limit changes the game feel entirely. Playtesting without it produced a different kind of engagement — more exploratory, less committed. The limit reframes every cell entry as a decision rather than an experiment, which is what makes the harder difficulty levels feel hard rather than just slow.",
   ],
   order: 1,
+
+  workCard: {
+    category: "Android / Puzzle App",
+    description:
+      "A Sudoku app focused on clean interaction, logic-driven gameplay, and mobile usability. It highlights my interest in building focused products where simplicity, responsiveness, and good UI polish matter as much as the core mechanic.",
+  },
 };
 
 export default sudoku;

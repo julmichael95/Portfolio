@@ -87,6 +87,12 @@ const chess: Project = {
     "The undo stack is a product decision, not just a feature. Allowing undo in a two-player local game reframes the product: it becomes a learning tool and an analysis surface, not just a game. The decision to include it (and to implement it correctly against an immutable history stack) shaped what kind of product CheckmateFlow is.",
   ],
   order: 2,
+
+  workCard: {
+    category: "Mobile App / Strategy Learning",
+    description:
+      "A chess-focused product built around structured practice, decision-making, and repeatable improvement. It reflects my interest in products that turn skill development into a more engaging and systematic experience.",
+  },
 };
 
 export default chess;

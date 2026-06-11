@@ -96,6 +96,12 @@ const alune: Project = {
   ],
   next: "The next meaningful improvement is a feedback loop. Right now the engine recommends from a static model — it doesn't know which suggestions you accepted or which you skipped. Adding implicit signals (which outfits were saved to the plan, which were dismissed) and shifting scoring weights accordingly would transform Alune from 'AI-generated recommendations' to 'genuinely personalised styling.' That's the version worth building next.",
   order: 1,
+
+  workCard: {
+    category: "Consumer AI / Wardrobe Planning",
+    description:
+      "An AI-assisted wardrobe app designed to help users organize what they own, plan outfits, and make better style decisions without overbuying. The product direction combines closet management, outfit planning, and fashion-focused AI features into a more useful everyday workflow.",
+  },
 };
 
 export default alune;

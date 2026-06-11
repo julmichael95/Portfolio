@@ -53,4 +53,13 @@ export interface Project {
   next?: string;
 
   order: number;
+
+  /**
+   * workCard — portfolio-facing summary for the /work page.
+   * Separate from oneLiner/hook so case study pages are unaffected.
+   */
+  workCard?: {
+    category: string;   // e.g. "Fintech / Wallet MVP"
+    description: string; // 2-sentence portfolio summary
+  };
 }

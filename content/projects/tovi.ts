@@ -99,6 +99,12 @@ const tovi: Project = {
   ],
   next: "Tovi on mainnet needs two things: an on-ramp (a way to convert real currency into cUSD via bank card or transfer) and group payment splitting, which is the original use case that motivated the product. Both are defined — the on-ramp requires working with a Celo ecosystem partner and passing the relevant compliance review; group splitting is a product and data model extension on top of the existing payment rails. The core infrastructure is already in place.",
   order: 2,
+
+  workCard: {
+    category: "Fintech / Wallet MVP",
+    description:
+      "A mobile-first payments product exploring simple peer-to-peer money movement and future merchant payment flows. I focused on building clear transaction UX, trust-oriented flows, and a practical path from consumer transfers toward broader payment infrastructure.",
+  },
 };
 
 export default tovi;
