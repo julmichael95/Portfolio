@@ -117,9 +117,8 @@ export default function WorkPage() {
             Products built from the<br className="hidden sm:block" /> ground up.
           </h1>
           <p className="text-[1.05rem] text-ink-2 max-w-[50ch] leading-relaxed mb-10">
-            Five shipped projects across consumer, fintech, B2B SaaS, and
-            Android. Each built solo — product, design, and code — using a
-            disciplined process and AI as an accelerator.
+            Five projects across consumer, fintech, B2B SaaS, and Android —
+            each built solo from problem to shipped product.
           </p>
 
           {/* Stat strip */}
@@ -167,8 +166,7 @@ export default function WorkPage() {
             <div>
               <MonoLabel className="block mb-2">More projects</MonoLabel>
               <p className="text-[0.875rem] text-ink-3 leading-relaxed max-w-[48ch]">
-                Focused builds — tighter scope, shorter timelines, specific
-                technical goals.
+                Tighter scope, shorter timelines, clear technical intent.
               </p>
             </div>
             <MonoLabel className="shrink-0">2 projects</MonoLabel>
@@ -231,9 +229,9 @@ export default function WorkPage() {
             <div className="max-w-[48ch]">
               <MonoLabel className="block mb-4">Always expanding</MonoLabel>
               <p className="text-[1rem] text-ink-2 leading-relaxed">
-                Deeper case studies — architecture decisions, AI prompting
-                strategy, and what I'd change — are being written for each
-                project. Each case study page is already live.
+                Each project has a live case study covering architecture
+                decisions, AI prompting strategy, and what I'd do differently.
+                Depth is being added over time.
               </p>
             </div>
             <div className="shrink-0">

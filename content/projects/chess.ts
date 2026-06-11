@@ -91,7 +91,7 @@ const chess: Project = {
   workCard: {
     category: "Mobile App / Strategy Learning",
     description:
-      "A chess-focused product built around structured practice, decision-making, and repeatable improvement. It reflects my interest in products that turn skill development into a more engaging and systematic experience.",
+      "A native Android chess app with a custom FIDE-complete rules engine — full move validation, all five draw conditions, and algebraic notation. Built as an exercise in implementation quality over a known, unambiguous domain.",
     cta: "View project",
   },
 };

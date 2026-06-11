@@ -103,7 +103,7 @@ const tovi: Project = {
   workCard: {
     category: "Fintech / Wallet MVP",
     description:
-      "A mobile-first payments product exploring simple peer-to-peer money movement and future merchant payment flows. I focused on building clear transaction UX, trust-oriented flows, and a practical path from consumer transfers toward broader payment infrastructure.",
+      "A mobile-first payments product for peer-to-peer money movement, built on the Celo network with stablecoin settlement. The focus was trust-oriented transaction UX — making on-chain transfers feel as simple as sending a message.",
     cta: "View case study",
   },
 };
