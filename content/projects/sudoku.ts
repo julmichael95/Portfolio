@@ -91,6 +91,7 @@ const sudoku: Project = {
     category: "Android / Puzzle App",
     description:
       "A Sudoku app focused on clean interaction, logic-driven gameplay, and mobile usability. It highlights my interest in building focused products where simplicity, responsiveness, and good UI polish matter as much as the core mechanic.",
+    cta: "View build",
   },
 };
 

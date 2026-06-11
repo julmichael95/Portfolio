@@ -59,7 +59,8 @@ export interface Project {
    * Separate from oneLiner/hook so case study pages are unaffected.
    */
   workCard?: {
-    category: string;   // e.g. "Fintech / Wallet MVP"
+    category: string;    // e.g. "Fintech / Wallet MVP"
     description: string; // 2-sentence portfolio summary
+    cta: string;         // CTA label for the /work page card, e.g. "View case study"
   };
 }

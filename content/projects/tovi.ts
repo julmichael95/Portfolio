@@ -104,6 +104,7 @@ const tovi: Project = {
     category: "Fintech / Wallet MVP",
     description:
       "A mobile-first payments product exploring simple peer-to-peer money movement and future merchant payment flows. I focused on building clear transaction UX, trust-oriented flows, and a practical path from consumer transfers toward broader payment infrastructure.",
+    cta: "View case study",
   },
 };
 

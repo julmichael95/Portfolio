@@ -88,6 +88,7 @@ const anse: Project = {
     category: "B2B SaaS / Customer Success",
     description:
       "An AI customer success platform built to help teams monitor account health, surface risk, and take action more efficiently. The project explores how AI can support structured operational workflows instead of acting as a loose chat layer on top of existing tools.",
+    cta: "See workflow",
   },
 };
 

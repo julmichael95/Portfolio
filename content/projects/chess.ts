@@ -92,6 +92,7 @@ const chess: Project = {
     category: "Mobile App / Strategy Learning",
     description:
       "A chess-focused product built around structured practice, decision-making, and repeatable improvement. It reflects my interest in products that turn skill development into a more engaging and systematic experience.",
+    cta: "View project",
   },
 };
 

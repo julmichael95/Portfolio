@@ -91,7 +91,7 @@ function FeaturedRow({
           href={`/work/${project.slug}`}
           className="group/cta self-start inline-flex items-center gap-3 px-5 py-3 rounded-[10px] border border-hairline text-[0.875rem] font-semibold text-ink hover:border-ink hover:bg-surface transition-all duration-200 ease-[cubic-bezier(.2,.7,.3,1)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
         >
-          View case study
+          {card?.cta ?? "View project"}
           <span className="transition-transform duration-300 group-hover/cta:translate-x-0.5">→</span>
         </Link>
       </div>
@@ -205,11 +205,17 @@ export default function WorkPage() {
                     </p>
                   </div>
 
-                  {/* Meta */}
-                  <div className="mt-3 flex items-center gap-2.5">
-                    <MonoLabel>{project.timeframe}</MonoLabel>
-                    <span className="text-hairline-2 select-none text-[0.65rem]">·</span>
-                    <MonoLabel>{project.stack[0]}</MonoLabel>
+                  {/* Meta + CTA row */}
+                  <div className="mt-3 flex items-center justify-between gap-4">
+                    <div className="flex items-center gap-2.5">
+                      <MonoLabel>{project.timeframe}</MonoLabel>
+                      <span className="text-hairline-2 select-none text-[0.65rem]">·</span>
+                      <MonoLabel>{project.stack[0]}</MonoLabel>
+                    </div>
+                    <span className="text-[0.8rem] font-semibold text-ink-3 group-hover:text-accent transition-colors duration-200 inline-flex items-center gap-1.5 shrink-0">
+                      {card?.cta ?? "View project"}
+                      <span className="transition-transform duration-300 group-hover:translate-x-0.5">→</span>
+                    </span>
                   </div>
                 </Link>
               );

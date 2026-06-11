@@ -101,6 +101,7 @@ const alune: Project = {
     category: "Consumer AI / Wardrobe Planning",
     description:
       "An AI-assisted wardrobe app designed to help users organize what they own, plan outfits, and make better style decisions without overbuying. The product direction combines closet management, outfit planning, and fashion-focused AI features into a more useful everyday workflow.",
+    cta: "Explore product",
   },
 };
 
