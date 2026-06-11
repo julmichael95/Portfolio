@@ -64,7 +64,7 @@ export default function AboutPage() {
           {/* Portrait */}
           <div className="aspect-square rounded-2xl border border-hairline overflow-hidden bg-surface">
             <Image
-              src="/images/portrait.png"
+              src="/images/portrait3.png"
               alt="Julius Michael — cartoon portrait"
               width={800}
               height={800}
