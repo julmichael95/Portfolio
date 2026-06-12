@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 
 const navLinks = [
@@ -63,13 +64,13 @@ export function MobileNav() {
         />
       </button>
 
-      {open && (
+      {open && typeof document !== "undefined" && createPortal(
         <div
           id="mobile-nav-menu"
           role="dialog"
           aria-modal="true"
           aria-label="Navigation menu"
-          className="fixed inset-0 z-50 bg-bg flex flex-col"
+          className="fixed inset-0 z-[9999] bg-bg flex flex-col"
         >
           {/* Header — height matches SiteHeader h-[60px] */}
           <div className="flex items-center justify-between px-6 h-[60px] border-b border-hairline shrink-0">
@@ -107,7 +108,8 @@ export function MobileNav() {
               </Link>
             ))}
           </nav>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );
