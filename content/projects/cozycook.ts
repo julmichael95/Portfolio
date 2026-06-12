@@ -17,6 +17,7 @@ const cozycook: Project = {
     src: "",
     alt: "CozyCook — recipe suggestions based on your current pantry and fridge",
     placeholder: "CozyCook — pantry to plate",
+    objectPosition: "top",
   },
 
   problem: [
@@ -44,6 +45,7 @@ const cozycook: Project = {
       placeholder: "CozyCook — pantry view",
       caption: "The pantry view groups ingredients by category with a freshness signal on items nearing expiry. Adding items is freeform — type, scan a receipt, or pick from a staples list. The inventory stays lightweight to maintain.",
       variant: "mobile",
+      objectPosition: "top",
     },
     {
       src: "",
@@ -51,6 +53,7 @@ const cozycook: Project = {
       placeholder: "CozyCook — recipe suggestions",
       caption: "Recipe suggestions show an ingredient match score alongside what's already stocked and what's optional. The goal is a fast yes/no decision — not a research session. High-match recipes load first.",
       variant: "mobile",
+      objectPosition: "top",
     },
     {
       src: "",
@@ -58,6 +61,7 @@ const cozycook: Project = {
       placeholder: "CozyCook — meal planner",
       caption: "The weekly planner locks in recipes for each day and generates a shopping list for only the missing ingredients, grouped by store section. Meals marked as cooked decrement the pantry automatically.",
       variant: "mobile",
+      objectPosition: "top",
     },
   ],
   ai: {

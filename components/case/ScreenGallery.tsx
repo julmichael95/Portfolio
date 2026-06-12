@@ -35,7 +35,7 @@ export function ScreenGallery({ screens }: ScreenGalleryProps) {
         const variant = screen.variant ?? "desktop";
         const aspectClass = variantAspect(variant);
         const imgSizes = isMobile
-          ? "(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+          ? "(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
           : "(max-width: 768px) 100vw, 50vw";
 
         return (
