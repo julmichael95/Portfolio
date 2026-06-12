@@ -80,7 +80,7 @@ export function MobileNav() {
               className="font-serif text-[1.05rem] tracking-[-0.01em] text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 rounded"
               style={{ fontFamily: "var(--font-serif)" }}
             >
-              Julius Michael
+              Julius
             </Link>
             <button
               onClick={close}

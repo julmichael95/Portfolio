@@ -10,7 +10,7 @@ export function AboutStrip() {
       <div className="aspect-square rounded-2xl border border-hairline overflow-hidden bg-surface">
         <Image
           src="/images/portrait.png"
-          alt="Julius Michael — cartoon portrait"
+          alt="Julius — cartoon portrait"
           width={800}
           height={800}
           className="w-full h-full object-cover"

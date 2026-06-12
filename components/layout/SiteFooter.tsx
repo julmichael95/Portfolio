@@ -21,7 +21,7 @@ export function SiteFooter() {
               className="font-serif text-[1.1rem] tracking-[-0.01em] text-ink mb-2"
               style={{ fontFamily: "var(--font-serif)" }}
             >
-              Julius Michael
+              Julius
             </p>
             <p className="text-[0.875rem] text-ink-3 max-w-[32ch] leading-relaxed">
               One-person product studio. AI-native workflow.

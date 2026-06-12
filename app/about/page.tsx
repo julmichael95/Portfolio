@@ -7,7 +7,7 @@ import { MonoLabel } from "@/components/ui/MonoLabel";
 import { Button } from "@/components/ui/Button";
 
 export const metadata: Metadata = {
-  title: "About — Julius Michael",
+  title: "About — Julius",
   description:
     "Software developer and product builder. I build complete products across fintech, consumer AI, B2B SaaS, and Android — solo, from problem to shipped app.",
 };
@@ -65,7 +65,7 @@ export default function AboutPage() {
           <div className="aspect-square rounded-2xl border border-hairline overflow-hidden bg-surface">
             <Image
               src="/images/portrait3.png"
-              alt="Julius Michael — cartoon portrait"
+              alt="Julius — cartoon portrait"
               width={800}
               height={800}
               className="w-full h-full object-cover"

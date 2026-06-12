@@ -1,5 +1,5 @@
 export const site = {
-  name: "Julius Michael",
+  name: "Julius",
   role: "Product Builder",
   email: "julmichael95@gmail.com",
   availability: "Open to select projects",

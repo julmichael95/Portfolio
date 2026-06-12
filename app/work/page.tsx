@@ -15,9 +15,9 @@ import chess from "@/content/projects/chess";
 import sudoku from "@/content/projects/sudoku";
 
 export const metadata: Metadata = {
-  title: "Work — Julius Michael",
+  title: "Work — Julius",
   description:
-    "Selected projects by Julius Michael — consumer apps, fintech, B2B SaaS, and Android development. Shipped solo from problem to product.",
+    "Selected projects by Julius — consumer apps, fintech, B2B SaaS, and Android development. Shipped solo from problem to product.",
 };
 
 const featured = [alune, tovi, anse];

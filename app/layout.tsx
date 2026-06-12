@@ -24,7 +24,7 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Julius Michael — Product Builder",
+  title: "Julius — Product Builder",
   description:
     "A one-person product studio building complete apps across AI, fintech, and consumer using Claude, Perplexity, and Gemini as force multipliers.",
 };

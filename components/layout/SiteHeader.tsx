@@ -27,7 +27,7 @@ export function SiteHeader() {
             className="font-serif text-[1.05rem] tracking-[-0.01em] text-ink hover:text-accent transition-colors duration-200"
             style={{ fontFamily: "var(--font-serif)" }}
           >
-            Julius Michael
+            Julius
           </Link>
 
           {/* Desktop nav */}

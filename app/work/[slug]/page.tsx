@@ -34,7 +34,7 @@ export async function generateMetadata({
   if (!project) return {};
 
   return {
-    title: `${project.name} — Julius Michael`,
+    title: `${project.name} — Julius`,
     description: project.oneLiner,
   };
 }

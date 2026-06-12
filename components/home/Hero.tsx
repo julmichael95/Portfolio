@@ -53,7 +53,7 @@ export function Hero({ featuredProjects }: HeroProps) {
             <div className="aspect-square rounded-2xl overflow-hidden border border-hairline bg-surface">
               <Image
                 src="/images/portrait2.png"
-                alt="Julius Michael"
+                alt="Julius"
                 width={600}
                 height={600}
                 className="w-full h-full object-cover"

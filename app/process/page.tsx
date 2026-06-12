@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/Button";
 import { processSteps, tools, principles } from "@/content/process";
 
 export const metadata: Metadata = {
-  title: "Process — Julius Michael",
+  title: "Process — Julius",
   description:
     "A six-step build process applied to every project — from problem statement to shipped product, using Claude, Perplexity, and Gemini as disciplined accelerators.",
 };

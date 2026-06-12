@@ -6,9 +6,9 @@ import { MonoLabel } from "@/components/ui/MonoLabel";
 import { site } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Contact — Julius Michael",
+  title: "Contact — Julius",
   description:
-    "Get in touch with Julius Michael — product builder and software developer open to select projects, consulting, and collaborations.",
+    "Get in touch with Julius — product builder and software developer open to select projects, consulting, and collaborations.",
 };
 
 // ── Section wrapper (matches /process and /about pattern) ─────────────────────
