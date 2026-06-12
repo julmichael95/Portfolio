@@ -12,6 +12,7 @@ const TOOL_COLORS: Record<AIStage["tool"], string> = {
   Perplexity:      "text-accent-2 bg-accent-soft border-accent/20",
   "Claude Design": "text-accent-2 bg-accent-soft border-accent/20",
   "Claude Code":   "text-accent-2 bg-accent-soft border-accent/20",
+  Claude:          "text-accent-2 bg-accent-soft border-accent/20",
   Me:              "text-ink-2 bg-surface-2 border-hairline",
 };
 

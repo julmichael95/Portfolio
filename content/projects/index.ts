@@ -2,6 +2,7 @@ import type { Project } from "./_types";
 import alune from "./alune";
 import tovi from "./tovi";
 import anse from "./ansa";
+import cozycook from "./cozycook";
 import sudoku from "./sudoku";
 import chess from "./chess";
 
@@ -10,6 +11,7 @@ export const allProjects: Project[] = [
   alune,
   tovi,
   anse,
+  cozycook,
   sudoku,
   chess,
 ];

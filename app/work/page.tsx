@@ -11,6 +11,7 @@ import type { Project } from "@/content/projects/_types";
 import alune from "@/content/projects/alune";
 import tovi from "@/content/projects/tovi";
 import anse from "@/content/projects/ansa";
+import cozycook from "@/content/projects/cozycook";
 import chess from "@/content/projects/chess";
 import sudoku from "@/content/projects/sudoku";
 
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     "Selected projects by Julius — consumer apps, fintech, B2B SaaS, and Android development. Shipped solo from problem to product.",
 };
 
-const featured = [alune, tovi, anse];
+const featured = [alune, tovi, anse, cozycook];
 const supporting = [chess, sudoku];
 
 // ── Featured project row ───────────────────────────────────────────────────
@@ -116,15 +117,15 @@ export default function WorkPage() {
             Products built from the<br className="hidden sm:block" /> ground up.
           </h1>
           <p className="text-[1.05rem] text-ink-2 max-w-[50ch] leading-relaxed mb-10">
-            Five projects across consumer, fintech, B2B SaaS, and Android —
+            Six projects across consumer, fintech, B2B SaaS, and Android —
             each built solo from problem to shipped product.
           </p>
 
           {/* Stat strip */}
           <div className="flex flex-wrap gap-x-10 gap-y-4 pt-8 border-t border-hairline">
             {[
-              { label: "Projects",  value: "5" },
-              { label: "Shipped",   value: "4" },
+              { label: "Projects",  value: "6" },
+              { label: "Shipped",   value: "5" },
               { label: "Platforms", value: "Web · Android" },
               { label: "Role",      value: "Solo" },
             ].map((stat) => (
@@ -144,7 +145,7 @@ export default function WorkPage() {
         <Container>
           <div className="flex items-baseline justify-between gap-6 mb-2">
             <MonoLabel className="block">Featured work</MonoLabel>
-            <MonoLabel className="shrink-0">3 projects</MonoLabel>
+            <MonoLabel className="shrink-0">4 projects</MonoLabel>
           </div>
 
           {featured.map((project, i) => (

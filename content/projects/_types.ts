@@ -26,7 +26,7 @@ export interface ProjectImage {
 }
 
 export interface AIStage {
-  tool: "Gemini" | "Perplexity" | "Claude Design" | "Claude Code" | "Me";
+  tool: "Gemini" | "Perplexity" | "Claude Design" | "Claude Code" | "Claude" | "Me";
   did: string;
 }
 
