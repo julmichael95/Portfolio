@@ -9,10 +9,11 @@ import { Section } from "@/components/layout/Section";
 import alune from "@/content/projects/alune";
 import tovi from "@/content/projects/tovi";
 import anse from "@/content/projects/ansa";
+import cozycook from "@/content/projects/cozycook";
 import sudoku from "@/content/projects/sudoku";
 import chess from "@/content/projects/chess";
 
-const featured = [alune, tovi, anse];
+const featured = [alune, tovi, anse, cozycook];
 const experiments = [sudoku, chess];
 
 export default function HomePage() {
